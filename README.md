@@ -1,5 +1,4 @@
 # neural_network_article
-Article on the underlying mechanics on neural networks and predictive modelling
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jtsw1990/neural_network_article/master?filepath=neural_network_article.ipynb)
 
 ## Outputs
