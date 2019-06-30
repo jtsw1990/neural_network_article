@@ -3,7 +3,7 @@ Article on the underlying mechanics on neural networks and predictive modelling
 
 ## Outputs
 
-- (Binder Version)[https://mybinder.org/v2/gh/jtsw1990/neural_network_article/master]
+- [Binder Version](https://mybinder.org/v2/gh/jtsw1990/neural_network_article/master)
 - Word document
 
 ## Article outline
