@@ -1,0 +1,2820 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="neural_network_article_preview.fld/filelist.xml">
+<link rel=Edit-Time-Data href="neural_network_article_preview.fld/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>1</o:Author>
+  <o:LastAuthor>1</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>124</o:TotalTime>
+  <o:Created>2019-06-30T07:28:00Z</o:Created>
+  <o:LastSaved>2019-06-30T07:28:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>1313</o:Words>
+  <o:Characters>7490</o:Characters>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>8786</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="neural_network_article_preview.fld/themedata.thmx">
+<link rel=colorSchemeMapping
+href="neural_network_article_preview.fld/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:decorative;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:等线;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"DengXian Light";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:"等线 Light";
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@DengXian Light";
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:337003866;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1135856910 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-AU style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<h1>Peeking into the black box: Neural Networks</h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>&quot;Neural Networks&quot; and &quot;Deep Learning&quot;
+have become quite the buzzwords nowadays, even within more traditional
+industries like insurance. However, ask any Actuary what's the most commonly
+used model he/she uses, and it is unlikely you'll hear any answer other than
+GLMs or GBMs.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>What is a Neural Network?</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>A neural network, as cool as it sounds, is nothing more than
+a statistical model. Much like its older brother - The simple linear regressor,
+the neural network also uses parameters and optimization to construct a
+line-of-best-fit for whatever data it is being presented. Unlike its old
+brother however, it is modelled from the way biological neural networks in our
+brains process information.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Example: Foo Insurance Ltd</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>We find ourselves back at Foo Insurance Ltd with a rather
+interesting problem. Esther, our actuarial manager has some data that has been
+cleaned and normalized from the company's motor book. She wants to build a
+model to predict if a policyholder is likely to incur an accident claim based
+on the age of the car, and the policyholder himself/herself. She has heard a
+lot about neural networks and wants to test the model’s capabilities on this
+problem.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>If you would like to play around with the widgets shown
+here, you can:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Click here for the interactive binder version</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Click here for the source code for the
+interactive tools</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>INSERT DATASET SCREENSHOT</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>INSERT DATASET GRAPH</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>As you can tell, the dataset isn't linearly separable, which
+is the case in most situations. Although 2 features are a little
+over-simplified, it will serve the purpose for this article and extends to
+higher dimensions.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>First Iteration – Single Layered Network</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Excited about playing with this new model, Esther proceeds
+to build a very simple network that looks something like this:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>INSERT NODE CHART HERE</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Recall that the formula for a neural network output on this
+dataset (without any bias terms) with 1 layer would look like: </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>o</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   </m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:138pt;
+ height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image001.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=138 height=14
+src="neural_network_article_preview.fld/image002.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>o</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   </m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:138pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image003.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=138 height=14
+src="neural_network_article_preview.fld/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r><span
+   style='mso-spacerun:yes'> </span></m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:3pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image005.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=3 height=14
+src="neural_network_article_preview.fld/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Now, both outputs will give us some kind of probability or
+likelihood that the response is either 1 or 0. For example, if o_1 gave an
+output of 0.6 and o_2 gave 0.4, the particular data point would then be
+classified as green instead of grey.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>By utilizing some good old high school linear algebra,
+recall that we can construct a line with this system of 2 equations,
+particularly:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+   </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:224pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image007.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=224 height=14
+src="neural_network_article_preview.fld/image008.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:227pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image009.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=227 height=14
+src="neural_network_article_preview.fld/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:142pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image011.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=142 height=14
+src="neural_network_article_preview.fld/image012.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:f><m:fPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+     - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+      mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub></m:num><m:den><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+     - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+      mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:93pt;height:27pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image013.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=93 height=27
+src="neural_network_article_preview.fld/image014.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>This equation represents a line which is also known as a
+decision boundary and is what separates a policyholder which incurs a claim and
+one that does not.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1"
+ o:spid="_x0000_i1027" type="#_x0000_t75" style='width:237pt;height:262pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="neural_network_article_preview.fld/image015.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=237 height=262
+src="neural_network_article_preview.fld/image015.gif" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Looks like this first iteration does not really do a good
+job in properly classifying the 2 types of policyholders. Note that with the
+current network architecture, the boundary is restricted to rotating on the
+origin. Wouldn’t it be useful if we could shift this line up and down?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Second Iteration – Single Layered Network with Bias Terms</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Esther now recalls the concepts learnt in Simple Linear Regression,
+where an intercept is included in the model to give predictions some minimum
+value where the response turns out to be 0. She then proceeds to add an
+intercept (also known as a bias term) to the 2 initial equations, which gets:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>o</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:166pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image016.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=166 height=14
+src="neural_network_article_preview.fld/image017.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>o</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:166pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image018.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=166 height=14
+src="neural_network_article_preview.fld/image019.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:289pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image020.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=289 height=14
+src="neural_network_article_preview.fld/image021.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:300pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image022.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=300 height=14
+src="neural_network_article_preview.fld/image023.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:193pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image024.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=193 height=14
+src="neural_network_article_preview.fld/image025.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+     - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+      mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:num><m:den><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:152pt;height:30pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image026.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=152 height=30
+src="neural_network_article_preview.fld/image027.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=
+   </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:d><m:dPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:num><m:den><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:den></m:f><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+     - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+      mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:num><m:den><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:155pt;height:30pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image028.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=155 height=30
+src="neural_network_article_preview.fld/image029.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-family:"Cambria Math",serif;mso-omath-para:yes'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Again, an equation for the decision boundary that separates
+2 categories of policyholders.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:255pt;height:292pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="neural_network_article_preview.fld/image030.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=255 height=292
+src="neural_network_article_preview.fld/image030.gif" v:shapes="Picture_x0020_2"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Notice that the model now enables the decision boundary to
+shift up and down like a simple linear regression model, giving Esther more
+capabilities to accurately model the 2 policyholder categories.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Third Iteration –Network with Hidden Layer</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Even though it is a little better now, remember that,
+similar to real life, the dataset here is not linearly separable and our
+current network has is only capable of producing a straight line to
+differentiate the 2 categories.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Will adding more layers of neurons give the model non-linear
+capabilities? Well, going back to high school mathematics yet again, recall
+that a linear combination of 2 linear equations still produces something linear.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Thus, no matter how many layers of neurons Esther decides to
+stack on top of each other, the decision boundary produced by the model will
+always be linear! How then, can Esther make the network adapt to non-linear
+data?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Fourth Iteration – Multi Layered Network with Activation Functions</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The trick to introducing non-linearities in the network is
+to wrap each output with some non-linear function.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   </m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:186pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image031.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=186 height=14
+src="neural_network_article_preview.fld/image032.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+   </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:181pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image033.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=181 height=14
+src="neural_network_article_preview.fld/image034.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>In this example, let’s take the f(x) to be Sigmoid function,
+meaning:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r><m:r>x</m:r><m:r>)
+   = </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:num><m:den><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(1+</m:r></span></i><m:sSup><m:sSupPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+         m:val="script"/><m:sty m:val="i"/></m:rPr>e</m:r></span></i></m:e><m:sup><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+         m:val="script"/><m:sty m:val="i"/></m:rPr>-</m:r><m:r>x</m:r></span></i></m:sup></m:sSup><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:den></m:f><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   , </m:r><m:r>for</m:r><m:r> </m:r><m:r>x</m:r><m:r><m:rPr><m:scr m:val="double-struck"/><m:sty
+     m:val="i"/></m:rPr> ∈R</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:157pt;height:30pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image035.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=157 height=30
+src="neural_network_article_preview.fld/image036.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Imagine now, that Esther introduces these activation
+functions into the model, and uses a single layered network.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>INSERT NETWORK GRAPH HERE</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:sSub><m:sSubPr><span style='font-family:
+    "Cambria Math",serif;mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:
+    "Cambria Math";font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+   </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:176pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image037.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=176 height=14
+src="neural_network_article_preview.fld/image038.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:sSub><m:sSubPr><span style='font-family:
+    "Cambria Math",serif;mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:
+    "Cambria Math";font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+   </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:176pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image039.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=176 height=14
+src="neural_network_article_preview.fld/image040.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:sSub><m:sSubPr><span style='font-family:
+    "Cambria Math",serif;mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:
+    "Cambria Math";font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>f</m:r><m:r>(</m:r><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>5</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>6</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+   </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:176pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image041.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=176 height=14
+src="neural_network_article_preview.fld/image042.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>7</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>8</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>9</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>10</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>11</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>12</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>5</m:r></span></i></m:sub></m:sSub></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:331pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image043.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=331 height=14
+src="neural_network_article_preview.fld/image044.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-family:"Cambria Math",serif;mso-omath-para:yes'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Cambria Math",serif'><span
+style='mso-omath-para:yes'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>7</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>10</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>8</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>11</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)
+   + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>a</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+    normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>9</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>12</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)
+   +</m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>5</m:r></span></i></m:sub></m:sSub><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+   = 0</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-AU;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:348pt;height:14pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image045.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=348 height=14
+src="neural_network_article_preview.fld/image046.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-family:"Cambria Math",serif;mso-omath-para:yes'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>...</p>
+
+<p class=MsoNormal align=center style='text-align:center'>…</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMath><m:f><m:fPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>7</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+    - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+     mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+     font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>10</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:num><m:den><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(1+</m:r></span></i><m:sSup><m:sSupPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>e</m:r></span></i></m:e><m:sup><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>-</m:r><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>(</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+       normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+       normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:sup></m:sSup><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:den></m:f><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+  + </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+   mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+   font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>8</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+    - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+     mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+     font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>11</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:num><m:den><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(1+</m:r></span></i><m:sSup><m:sSupPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>e</m:r></span></i></m:e><m:sup><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>-</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+       normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+       normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+          m:val="script"/><m:sty m:val="i"/></m:rPr>(</m:r><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+      </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:sup></m:sSup><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:den></m:f><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+</m:r></span></i><m:f><m:fPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>(</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>9</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+    - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+     mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+     font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>12</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:num><m:den><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>(1+</m:r></span></i><m:sSup><m:sSupPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+     normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>e</m:r></span></i></m:e><m:sup><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+        m:val="script"/><m:sty m:val="i"/></m:rPr>-</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+       normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+       normal'><span style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr
+          m:val="script"/><m:sty m:val="i"/></m:rPr>(</m:r><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>5</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      + </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>w</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>6</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+      * </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+
+      </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>3</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:sup></m:sSup><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>)</m:r></span></i></m:den></m:f><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>+</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>4</m:r></span></i></m:sub></m:sSub><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>
+  - </m:r></span></i><m:sSub><m:sSubPr><span style='font-family:"Cambria Math",serif;
+   mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+   font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>5</m:r></span></i></m:sub></m:sSub><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=0</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:DengXian;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;position:relative;top:8.0pt;mso-text-raise:-8.0pt;
+mso-ansi-language:EN-AU;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:445pt;height:23pt'>
+ <v:imagedata src="neural_network_article_preview.fld/image047.emz" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=445 height=23
+src="neural_network_article_preview.fld/image048.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>What the actuarial fish. Note that this is the decision
+boundary for a relatively simple architecture and activation function. While
+Esther will not be able to analytically solve this for x2, she would chuck this
+monstrosity into a pre-built solver and an implicit equation graphing tool.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:309pt;height:300pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="neural_network_article_preview.fld/image049.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=309 height=300
+src="neural_network_article_preview.fld/image049.gif" v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>It seems like now Esther has a model that is capable of
+producing non-linear decision boundaries but is it enough for this task?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>If she (or as a matter of fact, you the reader) wanted to,
+she could definitely spend time to tweak each of the biases and weights
+manually to get a reasonable decision boundary but a more popular approach is
+to use algorithms such as “Gradient Descent” to find these optimal values. The
+only “Descent” you will achieve by doing this manually is the one into madness.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>So, what’s the issue now?</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>As of now, it seems Esther has a flexible model in which she
+can explain down to the last weight change. Why then is everyone still calling
+neural networks a black box? </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>There are various deeper issues regarding neural networks
+which we will not discuss here, but it must be stressed that the architecture
+of the network Esther built here is extremely simple (with 3 hidden neurons) and
+even then, we can see the effect of combinatorial explosion on the weights
+while trying to derive the equation for the decision boundary. Imagine if this
+were a more realistically-sized network with 2 hidden layers, each with 56
+hidden neurons? A single weight’s impact and interpretation would not be as
+clear as it is now, and we would not have as much freedom to tweak the weights
+individually like we are currently doing.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Not tractable, so… useless?</h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Although we currently are not able to interpret the
+resulting weights/coefficients of a neural network model like we can for a GLM,
+there are methods we can utilize to “examine the black box from different
+angles”, giving us some insights on what the network is lacking or doing well
+for iteration purposes.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>If you are interested in finding out how to apply a proper
+deep learning model to insurance data, check out Jacky Poon’s article:
+Multitasking Risk Pricing Using Deep Learning to see how powerful a neural
+network can be!</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Maybe the insurance industry isn’t as eager to dive into
+“partially explainable AI” compared to tech firms like Facebook or Netflix
+because a decision made by a model that would cause a family to lose their live
+savings is arguably more important than getting your recommended movie list
+wrong. Nevertheless, the future is definitely heading in that direction and the
+actuarial profession must be well prepared for when that time comes.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
