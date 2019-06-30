@@ -5,6 +5,7 @@ Article on the underlying mechanics on neural networks and predictive modelling
 
 - [Binder Version](https://mybinder.org/v2/gh/jtsw1990/neural_network_article/master)
 - Word document
+- HTML version to enable animated GIFs
 
 ## Article outline
 
