@@ -239,5 +239,3 @@ with p2:
         w9, w10, w11, w12,
         b1, b2, b3, b4, b5
     ))
-
-st.write(df.loc[df['response'] != '1', :].shape)
