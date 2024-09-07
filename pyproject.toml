@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "neural-network-article"
+version = "0.1.0"
+description = "Simple application to visualize decision boundaries from a neural network"
+authors = ["jtsw1990 <jtsw1990@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
